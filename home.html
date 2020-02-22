@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <script>
+            function prime()
+            {
+                var x=document.getElementById("pri").value;
+                var ct=0;
+                for(i=2;i<x/2;i++)
+                    {
+                        if(x%i ==0)
+                            {
+                            ct=ct+1;
+                            }
+                    }
+                if(ct==0)
+                    {
+                        document.getElementById("prim").innerHTML = ("Number is prime");
+                    }
+                else
+                    {
+                        document.getElementById("prim").innerHTML = ("Number is not prime");
+                    }
+            } 
+            function longest_word()
+            {
+                var str=document.getElementById("lon").value;
+                var splstr=str.split(" ");
+                var longest=0;
+                for(i=0;i<splstr.length;i++)
+                    {
+                        if(splstr[i].length>longest)
+                            longest=splstr[i].length;
+                    }
+                document.getElementById("longes").innerHTML = (longest);
+            }
+            function capitalize() 
+            {
+                var str=document.getElementById("caps").value;
+                var splitStr = str.toLowerCase().split(' ');
+                for (var i = 0; i < splitStr.length; i++) 
+                {
+                    splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+                }
+                document.getElementById("capi").innerHTML = (splitStr.join(' '));
+            } 
+            function perfect()
+            {
+                var x=document.getElementById("per").value;
+                var sum=0;
+                for(var i=1;i<=x;i++)
+                    {
+                        if(x%i==0)
+                        {
+                            sum=sum+i;
+                        }
+                    }
+                if(sum/2==x)
+                    document.getElementById("perf").innerHTML = ("Number is perfect");
+                else
+                    document.getElementById("perf").innerHTML = ("Number is not perfect");
+            }
+        </script>
+        <div class="he" align="center">
+            Multi-Function Page
+        </div>
+        <div class="choice" align="center">
+            <input id = "caps" type="text" name="cap">  
+            <button class="but" onclick="capitalize()">  
+                Click to capitalize 
+            </button> 
+            <br><br>
+            <div class="para" id="capi"></div>
+            <br><br>
+            <input id = "pri" type="text" name="pri">  
+            <button class="but" onclick="prime()">  
+                Click to check if prime 
+            </button><br><br>
+            <div class="para" id="prim"></div>
+            <br><br>
+            <input id = "per" type="text" name="per">  
+            <button class="but" onclick="perfect()">  
+                Click to find if perfect
+            </button><br><br>
+            <div class="para" id="perf"></div>
+            <br><br>
+            <input id = "lon" type="text" name="lon">  
+            <button class="but" onclick="longest_word()">  
+                Click to find longest word
+            </button><br><br>
+            <div class="para" id="longes"></div>
+        </div>
+        <br>
+        <hr style="background-color: aliceblue" noshade size=5>
+        <marquee direction="left" style="color: aliceblue" scrollamount="10">Website designed by Nithesh Gurudaas; Contact number:9994709300</marquee>
+    </body>
+</html>

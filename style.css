@@ -1,0 +1,53 @@
+.choice
+            {
+                background: #ff0000;
+                border-radius: 25px;
+                text-align: center;
+                margin-top: 25px;
+                margin-left:95px;
+                margin-right:85px;
+                padding:50px;
+                width:80%;
+                font-family: 'Titillium Web', sans-serif;
+            }
+.he{
+    
+                background: #0000ff;
+                border-radius: 25px;
+                text-align: center;
+                margin-top: 25px;
+                margin-left:95px;
+                margin-right:85px;
+                padding:50px;
+                width:80%;
+                font-family: 'Titillium Web', sans-serif;
+                font-size:25px;
+                font-weight: bold;
+                color: aliceblue;
+}
+.but{
+    font-family: 'Gayathri', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+body {
+	background: linear-gradient(-45deg,#8B0000,#FFD700,#7CFC00,#0000FF);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.para{
+    color: aliceblue;
+    font-family: sans-serif;
+}
